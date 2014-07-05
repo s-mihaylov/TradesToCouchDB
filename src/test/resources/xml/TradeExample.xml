@@ -1,0 +1,30 @@
+<trade>
+    <tradeId>9288DA</tradeId>
+    <tradeDate>20140120</tradeDate>
+    <nominal>3319.00</nominal>
+    <leg>
+        <legId>IAKIJ</legId>
+        <cashflow>
+            <startDate>20140121</startDate>
+            <endDate>20140421</endDate>
+            <type>INT</type>
+            <amount>2</amount>
+        </cashflow>
+        <cashflow>
+            <startDate>20140421</startDate>
+            <endDate>20140721</endDate>
+            <type>INT</type>
+            <amount>1</amount>
+        </cashflow>
+
+    </leg>
+    <leg>
+        <legId>UAHNNN</legId>
+        <cashflow>
+            <aDate>20140120</aDate>
+            <pOrS>P</pOrS>
+            <type>XNL</type>
+            <amount>2000</amount>
+        </cashflow>
+    </leg>
+</trade>
