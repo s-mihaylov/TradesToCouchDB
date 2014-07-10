@@ -3,6 +3,11 @@ package xml
 import scala.xml._
 import org.json4s._
 
+/*
+the class is taken from json4s Xml.toJson with 2 changes:
+ - xml elements on the same level are grouped by name. Each group with 2 or more elements is converted to array
+ - attributes don't exist
+ */
 object XmlConverter {
 
   def toJson(xml: NodeSeq): JValue = {
