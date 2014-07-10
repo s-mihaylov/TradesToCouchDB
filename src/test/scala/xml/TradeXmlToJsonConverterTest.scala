@@ -27,7 +27,7 @@ object TradeXmlToJsonConverterTest {
     ))
 
 //    requestDispatcher.deleteTrade("gi_test1", tradeId)
-    requestDispatcher.postTrade("gi_test1", trade)
+//    requestDispatcher.postTrade("gi_test1", trade)
   }
 }
 

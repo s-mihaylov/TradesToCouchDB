@@ -7,6 +7,10 @@ import org.json4s.native.JsonMethods._
 
 class CouchDbRequestDispatcher {
 
+  def couchDbReq: Req = {
+    url(CouchDbProperties.address)
+  }
+
   def getDocument(databaseId: String, documentId: String){
     val req = couchDbReq / databaseId / documentId
     simpleExecute(req)
@@ -17,10 +21,6 @@ class CouchDbRequestDispatcher {
     val jsonReq = req.setContentType("application/json", "UTF-8")
 
     simpleExecute(jsonReq)
-  }
-
-  def couchDbReq: Req = {
-    url(CouchDbProperties.address)
   }
 
   def updateTrade(databaseId: String, trade: Trade){
